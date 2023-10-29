@@ -1,38 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet"> 
+    <style>
+        h1{
+            font-family: 'EB Garamond', serif;
+            font-size: 300%;
+        }
+        body {
+            background-color: #fdfdfd;
+            font-family: 'EB Garamond', serif;
+        }
+        .container {
+            text-align: center;
+            display: flex;
+            height: 100vh;
+            align-items: center; /* Vertically center the child elements */
+            justify-content: center; /* Horizontally */
+        }
+        h1 {
+            color: #333;
+        }
+        .wedding-details {
+            background-color: #f5f5f5;
+            padding: 30px;
+            margin: auto;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        }
+        .date-location {
+            font-size: 20px;
+            margin: 0px;
+        }
+        img {
+            max-width: 100%;
+
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>This is a simple HTML5 webpage template.</p>
-        </section>
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>SEO Optimization</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Your Website Name</p>
-    </footer>
+
+    <div class="container">
+
+
+        <img style="position:absolute; left: 0px; opacity: 30%; z-index: -1; max-height: 90vh;" src="left.png"/>
+        <img style="position:absolute; right: 0px; opacity: 30%; z-index: -1; max-height: 90vh;" src="right.png"/>
+    
+
+        <div class="wedding-details">
+            <img src="hero.jpeg" width="500px" alt="Wedding Venue"/>
+            <h1>Nonó és Gergő</h1>
+            <p class="date-location">Időpont: 2024.06.07.</p>
+            
+            <p class="date-location">Helyszín: Rosinante fogadó, Szigetmonostor</p>
+        </div>
+    </div>
 </body>
 </html>
