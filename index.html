@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Nonó és Gergő</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -14,29 +15,38 @@
             font-size: 300%;
         }
         body {
+            font-size: 20px;
             background-color: #fdfdfd;
             font-family: 'EB Garamond', serif;
         }
         .container {
-            text-align: center;
             display: flex;
+            flex-direction: column;
             height: 100vh;
-            align-items: center; /* Vertically center the child elements */
-            justify-content: center; /* Horizontally */
-            max-width: 600px;
+            max-width: 1000px;
         }
-        h1 {
-            color: #333;
-        }
+
         .wedding-details {
             background-color: #f5f5f5;
-            padding: 30px;
-            margin: auto;
+            padding: 60px;
+            margin-top: 100px;
+            margin-bottom: 100px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
         }
         .date-location {
-            font-size: 20px;
             margin: 0px;
+        }
+        ul{
+
+            list-style: none;
+        }
+        h2{
+            margin-bottom: 20px;
+
+        }
+        p{
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
         img {
             max-width: 100%;
@@ -54,13 +64,30 @@
     
 
         <div class="wedding-details">
-            <img src="hero.jpeg" width="500px" alt="Wedding Venue"/>
-            <img src="title.png" width="500px" alt="Wedding Venue"/>
-            <p class="date-location">Időpont: 2024.06.07. 16:00
-            </p>
+            <div style="width: 100%; text-align: center;">
+                <img src="hero.jpeg" width="100%" alt="Wedding Venue"/>
+                <img src="title.png" width="70%" alt="Wedding Venue"/>
+            </div>
+            <h2>
+                <p class="date-location">Időpont: 2024.06.07.</p>
+                <p class="date-location">Helyszín: Rosinante fogadó, Szigetmonostor</p>
+            </h2>
+            <hr>
+
+                <h2>Esküvői menetrend</h2>
+                <p>15:00 Vendégek érkezése és szobák elfoglalása</p>
+                <p>16:00 Ceremónia</p>
+                <p>19:00 Vacsora</p>
+
+            <hr>
+
+                <h2>Helyszín megközelítése</h2>
+                <p>Autóval a tahitótfalui hídon keresztül lehet átjutni a Szentendrei-szigetre, ez Budapest belvárosából kb. 45 perc.</p>
+                <p>Tömegközlekedéssel leggyorsabban a szentendrei <a href="https://iranyszentendre.hu/wp-content/uploads/2018/03/Pásztorrév-menetrend.pdf" target="_blank">Pásztor révvel</a> lehet átjutni a szigetre, így Budapest belvárosából kb. 80 perc az út. A pontos érkezéshez a 14:35-kor induló kompot ajánljuk.</p>
+         
             
-            <p class="date-location">Helyszín: Rosinante fogadó, Szigetmonostor</p>
-        </div>
+        </div>        
+
     </div>
 </body>
 </html>
